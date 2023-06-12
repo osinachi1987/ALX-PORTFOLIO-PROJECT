@@ -18,10 +18,12 @@
             </div>  
             <div class="left-side">
                 <div class="accesslink-wrapper">
-                    <a href="index.html">DOWNLOAD</a>
+                    <div>DOWNLOAD PDF</div>
+                    <a href="download.html"><img src="image/Download.png"></a>
                 </div>
                 <div class="accesslink-wrapper">
-                    <a href="about.html">UPLOAD</a>
+                    <div>UPLOAD PDF</div>
+                    <a href="upload.html"><img src="image/upload.png"></a>
                 </div>
             </div>
             <div class="right-side">
@@ -29,12 +31,12 @@
                     <div>FESTUS OSINACHI</div>
                 </div>
                 <div class="brand-join">
-                    <a href="form.html">Join Us</a>
+                    <a href="account.html">Join Us</a>
                 </div>
             </div>
         </div>
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
+            <a class="active" href="index.html">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <div class="search-container">
@@ -46,9 +48,9 @@
           </div>
         <div class="row">
             <div class="col-2">
-                <h1>Lets Share Educational Resources !</h1>
+                <h1>Welcome. </h1> <br> <h2>Lets Share Educational Resources !</h2>
                 <p>Learning is limitless, Share PDF content that have helped you. People needs educational content to help them grow as well.</p>
-                <a href="" class="btn"> Explore Now &#8594</a>
+                <a href="" class="btn"> Join Now &#8594</a>
         </div>
             <div class="col-2">
                 <img src="Image/H_BG.JPG">
@@ -59,54 +61,109 @@
 </div>
 
         <!..............PDF CATEGORIES............>
-
-    <div class="categories">
         <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <img src="Image/pe.jpg">
-            </div>
-            <div class="col-3">
-                <img src="Image/pex.jpg">
-            </div>
-            <div class="col-3">
-                <img src="Image/pexe.jpg">
-            </div>
+            <h2 class="title">Recently Added</h2>
+            <div class="row">
+               <div class="col-4">
+                   <a href=""><img src="image/pe.jpg" ></a>
+                   <h4>Where is Yesterday</h4>
+                <p>Download</p>
+               </div> 
+               <div class="col-4">
+                <a href=""><img src="image/pex.jpg" ></a>
+                <h4>In his Time</h4>
+                <p>Download</p>
+                </div> 
+                <div class="col-4">
+                <a href=""><img src="image/pexe.jpg" ></a>
+                <h4>Epistle to Africa</h4>
+                <p>Download</p>
+            </div> 
+
         </div>
-        </div>
-    </div>
-    <!...................FOOTER............>
+
+     </div> 
+            
+    <!...................FOOTER....................>
 
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <h3>Download our App</h3>
-                    <p>Download App for Andriod and IOS Phones</p>
+                    <h3>Share or Download PDF Books</h3>
+                    <p>Please Upload PDF Resources that helped <br> you in the past, so that others can benefit too.</p>
+                    <div class="app-logo">
+                        <img src="image/Download.png">
+                        <img src="image/upload.png" >
+                    </div>
                 </div>
+                <div class="footer-col-2">
+                    <img src="image/book-share icon.PNG">
+                    <p>Our Mission is to make available to you Educational resources to ease your online search.
+                        you can search for countless topics and Material will be made available to you for download.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupon</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
             </div>
-            <div class="footer-col-2">
-                <img src="image/book-share icon.PNG">
-                <p>Our Mission is to make available to you Education resources to ease you online search. <br> 
-                you can search for countless topics and Material will be made available to you for download.</p>
-            </div>
-            <div class="footer-col-3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li>Blog Post</li>
-                    <li>Return Policy</li>
-                    <li>Join Us</li>
-                </ul>
-            </div>
-            <div class="footer-col-3">
-                <h3>Follow us</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                </ul>
-            </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
         </div>
     </div>
+    <hr>
+    <p class="copyright">Copy Right 2023 ALX Portfolio Project by Festus Osinachi</p>
+    </div>
+    </div>
+
+    <!-------- js for menu toggle menu ---------->
+<script>
+    var menuItem = document.getElementById("MenuItem");
+    
+    MenuItem.style.maxHeight ="0px";
+    
+    function menutoggle(){
+        if (MenuItem.style.maxHeight =="0px")
+        {
+            MenuItem.style.maxHeight ="200px";
+        }
+        else
+        {
+            MenuItem.style.maxHeight ="0px";
+        }
+    }
+    
+    
+        </script>
+    
+    <!-------- js for menu toggle Form ---------->
+    <script>
+      var LoginForm = document.getElementById("LoginForm");  
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("Indicator");
+    
+      function register(){
+          RegForm.style.transform="translateX(0px)";
+          LoginForm.style.transform="translateX(0px)";
+          Indicator.style.transform="translateX(100px)";
+      }
+    
+      function login(){
+          RegForm.style.transform="translateX(300px)";
+          LoginForm.style.transform="translateX(300px)";
+          Indicator.style.transform="translateX(0px)";
+      }
+    </script>
+
 </body>
 </html>
